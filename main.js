@@ -17,8 +17,20 @@ function showPage() {
             let modalImg = document.getElementById("modalImagePlaceholder");
             modalImg.src = img.src;
             modal.style.display = "block";
+            showModalList();
         });
     }
+}
+
+function showModalList() {
+    // create gallery
+    let pageNum = document.getElementById('page').value - 1;
+    let photoBox = document.querySelector('#modal-list');
+    let photos = '';
+    for (let i = 0; i < 10; i++) {
+        photos += `<img src=${gallery[i + pageNum * 10][0]} id="${i}" alt="Dog${i + pageNum * 10}">`;
+    }
+    photoBox.innerHTML = photos;
 }
 
 // Sum of pics

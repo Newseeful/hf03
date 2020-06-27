@@ -22,7 +22,7 @@ img {
     width: 100px;
 }
 
-.page-items:hover {
+.page-items:hover, #modal-list>img:hover {
     cursor: pointer;
     opacity: 0.7;
 }
@@ -58,10 +58,24 @@ p {
 
 .modal-content {
     display: block;
-    height: 80%;
+    height: 50%;
     margin: auto;
-    max-width: 700px;
-    width: 80%;
+    max-width: 437px;
+    width: 50%;
+}
+
+#modal-list {
+    display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
+    column-gap: 0;
+    padding-top: 3%;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+}
+
+#modal-list>img {
+    margin: 0;
+    padding: 0;
 }
 
 /* Add Animation */
