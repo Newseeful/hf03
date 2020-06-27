@@ -28,9 +28,20 @@ function showModalList() {
     let photoBox = document.querySelector('#modal-list');
     let photos = '';
     for (let i = 0; i < 10; i++) {
-        photos += `<img src=${gallery[i + pageNum * 10][0]} id="${i}" alt="Dog${i + pageNum * 10}">`;
+        photos += `<img src=${gallery[i + pageNum * 10][0]} id="modal${i}" alt="Dog${i + pageNum * 10}">`;
     }
     photoBox.innerHTML = photos;
+
+    // create eventlisteners for modal-list
+    for (let i = 0; i < 10; i++) {
+        let modalElement = document.getElementById("modal"+i);
+        modalElement.addEventListener("click", function () {
+            // Get the image and put it on screen
+            let modalFocus = document.getElementById("modal"+i);
+            let modalImg = document.getElementById("modalImagePlaceholder");
+            modalImg.src = modalFocus.src;
+        });
+    }
 }
 
 // Sum of pics
