@@ -1,31 +1,13 @@
-
-// show all
-/*
-
-let photos = '';
-
-for (let i of gallery) {
-    photos += `
-        <div>
-            <img src=${i[0]} alt="Dog${i}">
-            <div>${i[1]}</div>
-        </div>
-    `;
-}
-
-document.getElementById('container').innerHTML = photos;
-
-*/
-
-let startPage = document.createElement('h1'); 
-startPage.textContent = 'A galéria összesen ' + gallery.length + ' képet tartalmaz'; 
-document.getElementById('container').appendChild(startPage);
+let newHeadline = document.querySelector('h1'); 
+newHeadline.textContent = 'A galéria összesen ' + gallery.length + ' képet tartalmaz'; 
 
 function showPage() {
-    let pageNum = document.getElementById('page').value;
+    let pageNum = document.getElementById('page').value - 1;
+    let photoContent = document.querySelector('#gallery');
     let photos = '';
     for (let i = 0; i < 10; i++) {
-        photos += `<div><img src=${gallery[i*pageNum][0]} alt="Dog${i*pageNum}"><div>${gallery[i*pageNum][1]}</div></div>`;
+        photos += `<div><img src=${gallery[i+pageNum*10][0]} alt="Dog${i+pageNum*10}"><div>${gallery[i+pageNum*10][1]}</div></div>`;
+      console.log(i+pageNum*10);  
     }
-   document.getElementById('container').innerHTML = photos;
+   photoContent.innerHTML = photos;
 }

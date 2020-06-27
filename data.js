@@ -1,13 +1,13 @@
 let gallery = [
-    ['img/dog01.jpg', '2010. ‎június ‎25.'],
-    ['img/dog02.jpg', '2011. ‎június ‎25.'],
-    ['img/dog03.jpg', '2012. ‎június ‎25.'],
-    ['img/dog04.jpg', '2013. ‎június ‎25.'],
-    ['img/dog05.jpg', '2014. ‎június ‎25.'],
-    ['img/dog06.jpg', '2015. ‎június ‎25.'],
-    ['img/dog07.jpg', '2016. ‎június ‎25.'],
-    ['img/dog08.jpg', '2017. ‎június ‎25.'],
-    ['img/dog09.jpg', '2018. ‎június ‎25.'],
+    ['img/dog1.jpg', '2010. ‎június ‎25.'],
+    ['img/dog2.jpg', '2011. ‎június ‎25.'],
+    ['img/dog3.jpg', '2012. ‎június ‎25.'],
+    ['img/dog4.jpg', '2013. ‎június ‎25.'],
+    ['img/dog5.jpg', '2014. ‎június ‎25.'],
+    ['img/dog6.jpg', '2015. ‎június ‎25.'],
+    ['img/dog7.jpg', '2016. ‎június ‎25.'],
+    ['img/dog8.jpg', '2017. ‎június ‎25.'],
+    ['img/dog9.jpg', '2018. ‎június ‎25.'],
     ['img/dog10.jpg', '2019. ‎június ‎25.'],
     ['img/dog11.jpg', '2020. ‎június ‎25.'],
     ['img/dog12.jpg', '2020. ‎június ‎11.'],
@@ -28,5 +28,5 @@ let gallery = [
     ['img/dog27.jpg', '2020. ‎június ‎25.'],
     ['img/dog28.jpg', '2020. ‎június ‎26.'],
     ['img/dog29.jpg', '2020. ‎június ‎27.'],
-    ['img/dog30.jpg', '2020. ‎június ‎28.']
+    ['img/dog0.jpg', '2020. ‎június ‎28.']
 ]
